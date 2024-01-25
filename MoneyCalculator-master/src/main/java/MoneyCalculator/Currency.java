@@ -1,0 +1,12 @@
+package MoneyCalculator;
+
+public record Currency(String code, String name) {
+    @Override
+    public String toString() {
+        return code + "-" + name;
+    }
+
+    public String toCode(){
+        return code;
+    }
+}
